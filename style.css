@@ -38,31 +38,6 @@ p {
   align-items: flex-start;
   justify-content: flex-start;
 }
-.black {
-  background-color: black;
-}
-.black:hover {
-  background-color: black;
-}
-
-.pink {
-  background-color: #f50057;
-}
-.pink:hover {
-  background-color: #f50057;
-}
-.blue {
-  background-color: #2879ff;
-}
-.blue:hover {
-  background-color: #2879ff;
-}
-.yellow {
-  background-color: yellow;
-}
-.yellow:hover {
-  background-color: yellow;
-}
 @media screen and (max-width: 714px) {
   .brushTool {
     margin: 0rem;
