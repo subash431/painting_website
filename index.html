@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Paint</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/spectre.css/dist/spectre.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's Paint !</h1>
+      <div class="row">
+        <div class="column col-sm-12">
+          <canvas id="paintCanvas" width="600" height="400"></canvas>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column col-sm-12">
+          <button class="btn btn-primary" id="clearBtn">
+            <i class="far fa-file"></i> Clear
+          </button>
+          <button class="btn" id="blackBrush">
+            <i class="fas fa-paint-brush" style="color: black"></i>
+          </button>
+          <button class="btn" id="pinkBrush">
+            <i class="fas fa-paint-brush" style="color: #f50057"></i>
+          </button>
+          <button class="btn" id="blueBrush">
+            <i class="fas fa-paint-brush" style="color: #2879ff"></i>
+          </button>
+          <button class="btn" id="yellowBrush">
+            <i class="fas fa-paint-brush" style="color: yellow"></i>
+          </button>
+          <button class="btn" id="eraserBtn">
+            <i class="fas fa-eraser"></i> Eraser
+          </button>
+        </div>
+      </div>
+      <div class="brushTool">
+        <div class="row">
+          <div class="column col-sm-12">
+            <div class="form-group">
+              <p>Brush Size:</p>
+              <input
+                type="range"
+                id="brushSize"
+                name="brushSize"
+                min="1"
+                max="10"
+                value="5"
+                class="slider"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <button id="blueBrush">
+              <span id="brushSizeDisplay">5</span>
+            </button>
+            <!-- Other brush buttons -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

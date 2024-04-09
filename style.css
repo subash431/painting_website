@@ -1,0 +1,52 @@
+.container {
+  margin: 50px auto;
+  text-align: center;
+}
+.container > h1 {
+  font-size: 1.6rem;
+}
+.row {
+  width: 100%;
+}
+canvas {
+  border: 2px solid #000;
+}
+.form-group > input {
+  width: 90%;
+}
+p {
+  margin: -5px 0 1.2rem;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.slider {
+  width: 90%;
+  margin: 0 auto;
+}
+.brushTool {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 14rem;
+  margin-top: 2rem;
+}
+.form-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 714px) {
+  .brushTool {
+    margin: 0rem;
+    margin-top: 1rem;
+  }
+  .container > h1 {
+    font-size: 1rem;
+  }
+  canvas {
+    width: 90%;
+  }
+}
